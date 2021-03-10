@@ -1,0 +1,51 @@
+/* Styles go here */
+
+
+
+.list {
+  float: left;
+  width: 90px;
+  height: 30px;
+  list-style-type: none;
+  background: black;
+  margin: 25px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  padding:10px;
+}
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+
+section {
+  border: 1px solid black;
+  height: 700px;
+  padding: 20px;
+}
+
+h2,h1{
+  text-align:center;
+}
+
+.log{
+  text-align:center;
+  padding:40px;
+}
+
+.details{
+  list-style-type:none;
+  text-align:center;
+}
+
+.emp p{
+  padding:20px;
+  text-align:center;
+}

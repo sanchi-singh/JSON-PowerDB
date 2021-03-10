@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Custom Directives</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+
+  <body ng-controller="MainCtrl as mc">
+    <h1>Employee Details</h1>
+    <h2>JOHN DOE</h2>
+    <div  ng-init="mc.page= 'login.html'">
+      <ul class="clearfix" >
+        <li class ="list" disp-dir profile-info="mc.profile" ng-click="mc.page = 'profile.html'"></li>
+        <li class ="list" display-dir resume-info="mc.resume" ng-click="mc.page = 'resume.html'"></li>
+        <li class ="list" disp-direc employee-info="mc.employee" ng-click="mc.page = 'employee.html'"></li>
+      </ul>
+    </div>
+    <section>
+      <div ng-include="mc.page"></div>
+    </section>
+    <footer>
+    </footer>
+  
+    
+    <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.0-rc.1/angular.js" data-semver="1.4.0-rc.1"></script>
+    <script src="https://code.angularjs.org/1.3.15/angular-route.min.js"></script>
+    <script src="app.js"></script>
+ 
+  </body>
+
+</html>
